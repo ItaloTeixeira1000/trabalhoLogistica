@@ -96,7 +96,9 @@
     <title>Home</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="bootstrap/css/nav.css" rel="stylesheet">
+    <link href="bootstrap/css/docs.min.css" rel="stylesheet">
     <style type="text/css">
       #menu-trigger {
           width: 30px;
@@ -114,6 +116,15 @@
         height: 4px;
         background: rgb(51, 51, 51) none repeat scroll 0% 0%;
         margin-top: 3px;
+      }
+      li{
+        margin-top: 15px; 
+         
+        width: 224px;
+      }
+      li:hover{
+        background-color: #4286f4;
+        transition: 0.5s;
       }
       /*
      .menuLateral {
@@ -150,7 +161,7 @@
 </head>
 <body style="margin: 0; padding: 0; height: 100%; width: 100%;">
     <div class="container-fluid">
-        <header class="row" style="height: 60px;">
+        <header class="row" style="height: 60px; background-color: #f4d442;">
           <div class="menu-trigger" id="menu-trigger">
               <div style=""></div>
               <div style=""></div>
@@ -158,32 +169,35 @@
           </div>
         
         </header>
+        
 
-          <div class="row">
+          <div class="row" style="height: 900px; ">
+              <nav class="nav bg-secondary col-md-2 " style="height: 100%; width: 20%;;">
+            <ul class="nav flex-column text-justify" style="padding-top: 20%; ">
+                <li class="nav-item " >
+                  <a class="nav-link active text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=cadastroEmpresa">Empresas</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=cadastroFornecedor">Fornecedores</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=cadastroProduto">Produtos</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="#">Estoque</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=cadastroCliente">Clientes</a>
+                </li>
+            </ul>
+          </nav>
               
-               <nav id="menuLateral" role="complementary" class="col-md-2 col-md-pull-8 nav bg-secondary text-white text-justify menuLateral" >
-                  <ul class="nav flex-column">
-                    <li class="nav-item"> <a class="nav-link active text-white" href="#">Home</a></li>
-                    <li class="nav-item"> <a class="nav-link text-white" href="#">Empresas</a></li>
-                    <li class="nav-item"> <a class="nav-link text-white" href="#">Fornecedores</a></li>
-                     <li class="nav-item"> <a class="nav-link text-white" href="#">Produtos</a></li>
-                      <li class="nav-item"> <a class="nav-link text-white" href="#">Estoque</a></li>
-                      <li class="nav-item"> <a class="nav-link text-white" href="?pagina=cadastroCliente">Clientes</a></li>
-                  </ul>
-              </nav>
+   
 
-              <div role="main" class="col-md-10 col-md-push-4">
+              <div role="main" class="col-md-10 col-md-push-4 text-justify">
             
               
     
-
-
-
-
- 
-
-
-
-
-
-

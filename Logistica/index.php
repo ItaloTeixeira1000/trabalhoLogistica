@@ -13,9 +13,15 @@ $pagina = isset($_GET['pagina']) == true ? $_GET['pagina'] : "";
 		case 'estoque':
 			include_once 'view/estoque.php';
 			break;
-		case 'produto':
-				include_once 'view/estoque.php';
+		case 'cadastroProduto':
+				include_once 'view/form_cadastrarP.php';
 				break;
+		case 'cadastroFornecedor':
+				include_once 'view/form_cadastrarF.php';
+				break;
+		case 'cadastroEmpresa':
+				include_once 'view/form_cadastrarE.php';
+				break;				
 		default:
 			include 'view/home.php';
 			break;			
