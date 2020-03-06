@@ -6,7 +6,11 @@
     $qtd = $_POST['qtd'];
     $in = $_POST['in'];
 
-    mysqli_query($link, "INSERT INTO produto(identificacao, precoUni, precoVarejo, qtd, nome) VALUES ('$in', '$precoU', '$precoV', '$qtd', '$nome')");
-    header("location: ../form_cadastrarP.php");
+    if(mysqli_query($link, "INSERT INTO produto(identificacao, precoUni, precoVarejo, qtd, nome) VALUES ('$in', '$precoU', '$precoV', '$qtd', '$nome')")){
+        header("location: ../home.php?pagina=cadastroProduto");
+    }else{
+       echo "erro no cadastro";
+    }
+    
     
 ?>

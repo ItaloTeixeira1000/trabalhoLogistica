@@ -2,9 +2,15 @@
 
     include_once 'conexao.php';
 
-    $idf = $_POST['id'];
+    
+    $idf= isset($_GET['idFornecedor']) == true ? $_GET['idFornecedor'] : "";
+    $query = "DELETE FROM fornecedor WHERE idf = $idf";
 
-    mysqli_query($link,"DELETE FROM fornecedor WHERE idf='$idf'");
+    if(mysqli_query($link,$query)){
+    	header("Location: ../home.php?pagina=fornecedor");
+    }else{
+    	echo "Erro na deleção";
+    }
 
-    header("location: mostrarForn.php");
+    
 ?>

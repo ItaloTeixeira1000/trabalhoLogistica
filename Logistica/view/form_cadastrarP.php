@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    
-    <title>Cadastrar Produtos</title>
-  
-</head>
-<body>
+
     <!--
     <h1>Cadastro de Produtos</h1>
     <form action="crudP/cadastroProd.php" name="formCP" method="POST"> 
@@ -49,10 +41,22 @@
                     <label>Identificação</label>
                     <input type='text' class='form-control' name='in' placeholder='Digite a identificação'>
                 </div>
+                <div class='form-group col-md-4'>
+                    
+                    <input type='submit' class='form-control' name='btn' value='Cadastrar'>
+                </div>
             </div>
             
             
         </form>
+
+        <div class='row' >
+                
+                <div class="col-md-3">
+                    <a href="?pagina=produto">Consultar Fornecedores</a>
+                </div>
+                
+            </div>
 
 </body>
 </html>

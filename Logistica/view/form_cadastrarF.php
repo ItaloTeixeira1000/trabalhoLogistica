@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    
-    <title>Cadastrar Fornecedor</title>
-</head>
-<body>
+
 	<!--
     <form action="crudP/cadastroForn.php" name="cf" method="POST" >
 
@@ -36,11 +29,24 @@
 					<label>Razão Social</label>
 					<input type='text' class='form-control' name='razaoSocial' placeholder='Digite a razão social'>
 				</div>
+				<div class='form-group col-md-3'>
+					
+					<input type='submit' class='form-control' name='Enviar' value="Cadastrar">
+				</div>
 
 			</div>
-			
-			
+
 		</form>
+		
+		
+			<div class='row' >
+				
+				<div class="col-md-3">
+					<a href="?pagina=fornecedor">Consultar Fornecedores</a>
+				</div>
+				
+			</div>
+		
 
 	
 	

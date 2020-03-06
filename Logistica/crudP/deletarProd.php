@@ -2,9 +2,13 @@
 
     include_once 'conexao.php';
 
-    $idP = $_POST['id'];
+    $idproduto= isset($_GET['idproduto']) == true ? $_GET['idproduto'] : "";
+    $query = "DELETE FROM produto WHERE idproduto = $idproduto";
 
-    mysqli_query($link,"DELETE FROM produto WHERE idproduto='$idP'");
+    if(mysqli_query($link,$query)){
+    	header("Location: ../home.php?pagina=produto");
+    }else{
+    	echo "Erro na deleção";
+    }
 
-    header("location: mostrarProd.php");
 ?>

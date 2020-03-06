@@ -126,8 +126,8 @@
         background-color: #4286f4;
         transition: 0.5s;
       }
-      /*
-     .menuLateral {
+      
+     nav .menuLateral {
           background: #333 none repeat scroll 0% 0%;
           width: 185px;
           height: 100%;
@@ -137,18 +137,18 @@
           transition: left .5s;
      }
  
-      .menuLateral li {
+       nav .menuLateral li {
       color: #fff;
       font-size: 20px;
       padding: 18px;
       cursor: pointer;
     }
  
-      .menuLateral ul {
+     nav .menuLateral ul {
       position: absolute;
       top: 31px;
     }
-*/
+
 
 
       
@@ -172,25 +172,26 @@
         
 
           <div class="row" style="height: 900px; ">
-              <nav class="nav bg-secondary col-md-2 " style="height: 100%; width: 20%;;">
+              <nav class="nav bg-secondary col-md-2 menuLateral" name="" style="height: 100%; width: 20%;;">
             <ul class="nav flex-column text-justify" style="padding-top: 20%; ">
                 <li class="nav-item " >
-                  <a class="nav-link active text-white" href="#">Home</a>
+                  <a class="nav-link active text-white" href="?pagina=home">Home</a>
+                </li>
+                
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=fornecedor">Fornecedores</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link text-white" href="?pagina=cadastroEmpresa">Empresas</a>
-                </li>
-                <li class="nav-item" >
-                  <a class="nav-link text-white" href="?pagina=cadastroFornecedor">Fornecedores</a>
-                </li>
-                <li class="nav-item" >
-                  <a class="nav-link text-white" href="?pagina=cadastroProduto">Produtos</a>
+                  <a class="nav-link text-white" href="?pagina=produto">Produtos</a>
                 </li>
                 <li class="nav-item" >
                   <a class="nav-link text-white" href="#">Estoque</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link text-white" href="?pagina=cadastroCliente">Clientes</a>
+                  <a class="nav-link text-white" href="?pagina=usuario">Usuário</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link text-white" href="?pagina=sair">Sair</a>
                 </li>
             </ul>
           </nav>
