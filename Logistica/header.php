@@ -185,7 +185,7 @@
                   <a class="nav-link text-white" href="?pagina=produto">Produtos</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link text-white" href="#">Estoque</a>
+                  <a class="nav-link text-white" href="?pagina=estoque">Estoque</a>
                 </li>
                 <li class="nav-item" >
                   <a class="nav-link text-white" href="?pagina=usuario">Usuário</a>
